@@ -1,74 +1,70 @@
-# 🚀 Ek Ödeme Analiz Sistemi
+# 🌐 Selim YILMAZ — Proje & Repository Kataloğu
 
-![Platform](https://img.shields.io/badge/Platform-Web-blue)
-![PHP](https://img.shields.io/badge/PHP-8.x-purple)
-![Security](https://img.shields.io/badge/Security-XSS%20%26%20CSRF%20%26%20RBAC-green)
-![Design](https://img.shields.io/badge/Design-Glassmorphism%20Dark%20%26%20Light-pink)
-![Version](https://img.shields.io/badge/Version-5.2-orange)
+[![Canlı Portfolyo](https://img.shields.io/badge/Canlı_Vitrin-selimyilmaz.github.io-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://selimyilmaz.github.io)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-selimyilmaz-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/selimyilmaz)
+[![İletişim](https://img.shields.io/badge/E--Posta-iletisim%40selimyilmaz.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iletisim@selimyilmaz.com)
 
-Sağlık kurumları için geliştirilmiş, güvenli ve modern bir ek ödeme hesaplama ve yönetim platformudur.
+Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal B2B finans/sağlık sistemleri, WebRTC tabanlı monorepo çözümleri ve WordPress eklentilerini içeren 20 temel projenin merkezi kataloğudur.
 
----
-
-## 🌟 Özellikler
-
-- **🌗 Premium UI & Dual-Mode:** Koyu ve Aydınlık tema desteği, glassmorphism efektleri ve akışkan animasyonlarla üst segment kullanıcı deneyimi.
-- **📈 Vergi Akordiyonu & Detay Modal:** Varsayılan vergi dilimine göre özet gösteren ve tüm dilimler için açılır detay dökümü sunan akıllı modal yapısı.
-- **📊 Gelişmiş Grafik Analiz Paneli:** Son 12 ayın veya seçilen tarih aralığının trendini (Teşvik, Taban, Brüt) dinamik olarak takip eden, çoklu veri karşılaştırmalı (`Chart.js`) interaktif dashboard.
-- **📉 Fark Ödeme Hesaplama Motoru:** Aktif Çalışma Gün Katsayısı (ACGK) ve birim bazlı kurallara göre (A, A+, E Toplam) otomatik fark hesaplayan hassas modül.
-- **⚙️ Merkezi Yönetim:** Ünvanlar, Birim Kuralları, Dönemler ve Kullanıcı Yetkileri artık tek bir "Ayarlar" sayfası altındaki sekmelerden yönetilmektedir.
-- **🔐 Akıllı Yetkilendirme (RBAC):** Kullanıcı bazlı menü erişimi ve veri grubu bazlı (Sağlık, Araştırma vb.) kısıtlama ile tam güvenlik.
-- **✅ Veri Formatlama & Tutarlılık:** Tüm finansal dökümler için binlik ayıraçlı (`125.000,00 ₺`) okuma modu ve otomatik ACGK sınırlamaları.
+> 🚀 **İnteraktif Canlı Vitrin:** Tüm projelerin ekran görüntüleri, canlı filtrelemeleri ve detaylı teknik dökümleri için **[selimyilmaz.github.io](https://selimyilmaz.github.io)** adresini ziyaret edebilirsiniz.
 
 ---
 
-## 🛠️ Teknik Altyapı
+## 📱 1. See Ekosistemi & Mobil Uygulamalar
 
-| Katman | Teknoloji |
-|--------|-----------|
-| Backend | Native PHP 8.x + PDO |
-| Veritabanı | MySQL / MariaDB (utf8mb4) |
-| Frontend | Vanilla JS, Custom CSS (Açık ve Koyu Destekli) |
-| İkonlar | FontAwesome 6 |
-| Grafikler | Chart.js with DataLabels |
-| Güvenlik | RBAC Auth, CSRF, XSS Protection |
-
----
-
-## 📁 Sürüm Geçmişi
-
-### v5.2 — 02 Nisan 2026 (Güncel)
-- **Hassas Hesaplama Motoru:** Yuvarlama mantığı "her adımda yukarı" (ceil) yerine, hata payını minimize eden standart matematiksel yuvarlama (`round - half up`) sistemine çekildi.
-- **UI Hassasiyet Düzenlemesi:** Görüntü kirliliğini önlemek adına modal dökümlerdeki ara puanlar (A Puanı, HNKK) 4 hane yerine 2 hane (`13,23`) formatına getirildi.
-- **Fark Hesaplama Layout:** Para birimi simgelerinin (₺) alt satıra kayması engellendi (nowrap), tablolar dar ekranlar için optimize edildi.
-- **Dönem Senkronizasyonu:** Tüm modüllerdeki dönem seçim listeleri, veritabanı kayıt sırasına (`id ASC`) göre ve aynı etiket formatıyla ("Yıl — Ay") eşitlendi.
-- **Dosya Temizliği:** Migration betikleri, eski yönlendirme dosyaları ve hata ayıklama kodları temizlenerek sistem %100 "dağıtıma hazır" hale getirildi.
-
-### v5.1 — 01 Nisan 2026
-- **Vergi Akordiyonu:** Detay modal penceresinde varsayılan vergi dilimine göre özet gösterim ve tüm dilimler için açılır-kapanır detay dökümü eklendi.
-- **Gelişmiş Modal Layout:** Taşma sorunlarını gideren dikey yerleşimli metrik kartları ve kurumsal tipografi alt yapısı kuruldu.
-- **Sıralama Stratejisi:** Tüm listeleme işlemlerinde veritabanı kayıt sırasına (`id ASC`) göre tam tutarlılık sağlandı.
-- **Birim Odaklı Hiyerarşi:** Tablolarda "Birim / Ünvan" hiyerarşisine geçilerek personelin çalıştığı birim ön plana çıkarıldı.
-- **Cache Busting:** Tarayıcı önbelleği kaynaklı görüntüleme sorunlarını önlemek için otomatik dosya sürümleme (`v=5.02`) sistemi entegre edildi.
-
-### v4.0 — Mart 2026
-- **Dual-Mode UI:** Sağ üst köşeye yerleştirilen premium ikon ile anında Aydınlık/Karanlık mod arası geçiş.
-- **Kullanıcı Yönetimi:** Ayarlar panelinden yeni kullanıcı ekleme, silme ve detaylı yetkilendirme (RBAC) sistemi.
-- **Merkezi Ayarlar:** Tüm idari parametrelerin tek bir HUB altında sekmeli yapıya taşınması.
-
-### v3.3 — Mart 2026
-- **UI Etiket Düzeltmesi:** Arayüzdeki "Kat: undefined" sorunu giderildi.
-- **Dual-Key API:** Geriye dönük uyumluluk için `e_puan` ve `e_artis_orani` desteği.
-- **Prefix Eşleşme:** Grup-Ünvan katsayı eşleşmesi 3 harfli prefix bazlı hale getirildi.
+| Proje | Platform | Sürüm | Teknoloji | Açıklama |
+| :--- | :--- | :--- | :--- | :--- |
+| **SeeDIO PRIME** | Android • TV • Auto | `v1.42.2` | `Flutter` `Kotlin Native` `Dart` | Donanım seviyesinde çalışan gerçek zamanlı Kotlin ses görselleştiricili, 18 dilli radyo ve streaming platformu. |
+| **SeeIBAN** | Android | `v1.1.8` | `Flutter` `ML Kit OCR` `SQLite` | Kamera OCR ile anlık IBAN tarama, MOD-97 algoritmasıyla doğrulama, 25+ banka tespiti ve biyometrik kilitli cüzdan. |
+| **SeeMAP** | Android • Android Auto | `v3.1.5` | `Flutter` `Hive` `Firebase` | Android Auto entegrasyonlu, internetsiz çalışan (offline-first) akıllı konum, tarla sınırı ve rota yönetim defteri. |
+| **SeeSKY** | Android | `v1.23.3` | `Flutter` `Weather API` `Canvas` | Canlı akan gökyüzü animasyonları, <50ms anlık sensör verisi ve doğal dilde bağlamsal hava durumu özeti. |
+| **FinSee Mobile** | Android | `v1.8.0` | `Flutter` `Dart` `Biometrics` | Stratejik finansal komuta merkezi; uçuş göstergesi HUD arayüzü, cam efektli kartlar ve biyometrik giriş güvenliği. |
+| **SeeMusic (SeeBliss)** | Android • TV • Auto | `v1.1.1` | `Flutter` `audio_service` `LRCLIB` | Reklamsız, aboneliksiz, LRCLIB üzerinden senkronize akan şarkı sözü desteğine sahip açık kaynak medya çalar. |
+| **SeeEditor Pro** | Android | `v1.2.0` | `Flutter` `Dart` `Syntax Engine` | Mobilde kod yazmayı kolaylaştıran akıllı sözcük kaydırma (word wrap), auto-hide panel ve Landscape Pro Mode. |
+| **SeeDRIVE** | Android TV • Android | `v1.0.0` | `Flutter` `Google Drive API` | Google Drive bulut arşivindeki video ve müzikleri doğrudan TV ekranında oynatan uzaktan kumanda odaklı medya oynatıcı. |
+| **CandySlicer** | Android | `v3.6.3` | `Flutter` `Sarkaç Fiziği` `AudioPool` | 60 FPS garantili sarkaç fiziği, süpürülmüş çarpışma tespiti, 3 ülke × 20 bölüm kampanya modu ve kral savaşları. |
 
 ---
 
-## 🗄️ Veritabanı Şeması
+## 💻 2. Kurumsal Web & Finans Platformları
 
-Yüklenecek `veritabani.sql` dosyası; Ünvanlar, Dönemler, Kurallar, Kullanıcılar ve Sistem Ayarları tablolarını içerir. 
-- İlk kurulumda varsayılan 'admin' kullanıcısı (Şifre: `123456![alt text](image.png)`) otomatik oluşturulur.
-- Mevcut sistemlerin güncellenmesi için `ayarlar` tablosu manuel eklenmeli veya `inc/db.php`'nin otomatik oluşturmasına izin verilmelidir.
+| Proje | Platform | Sürüm | Teknoloji | Açıklama |
+| :--- | :--- | :--- | :--- | :--- |
+| **Ek Ödeme Analiz Sistemi** | Web (Kurumsal) | `v18.7.0` | `PHP 8.2+` `MySQL` `Chart.js` | Üniversite hastaneleri ve sağlık kurumları için teşvik, taban ve ACGK fark hesaplayan mevzuata %100 uyumlu karar destek platformu. |
+| **Ek Ödeme Analiz Mobil** | Android • iOS | `v1.6.0` | `Flutter` `Dart` `REST API` | Hekimler ve hastane komisyon yöneticileri için teşvik dökümlerini ve bordro simülasyonunu cebine taşıyan mobil arayüz. |
+| **FinSee (Bütçe & Portföy)** | Web (SaaS) | `v4.5.0` | `PHP 8.1+` `Tailwind` `BIST/TEFAS API` | BIST hisseleri, TEFAS fonları, kripto varlıklar ve düzenli faturaları tek panelde toplayan canlı piyasa akışlı finans platformu. |
+| **Kira & Mülk Takip** | Web (B2B) | `v3.3.1` | `PHP Vanilla` `MySQL` `Tailwind` | Gayrimenkul yöneticileri için kiracı sözleşmeleri, süzme sayaç elektrik tüketim faturalandırması ve PDF tahsilat panosu. |
 
 ---
 
-*Bu proje, sağlık personeli hak edişlerinin şeffaf, hızlı ve hatasız bir şekilde hesaplanması için geliştirilmiştir.*
+## ⚙️ 3. Sistem & Monorepo Mimarileri
+
+| Proje | Platform | Sürüm | Teknoloji | Açıklama |
+| :--- | :--- | :--- | :--- | :--- |
+| **SeeCORE** | Windows • macOS • Android • iOS | `v1.0.34` | `C# .NET 8` `Swift` `Flutter` `WebRTC` | Açık onaylı, kendi kendine barındırılan sinyal/TURN sunuculu, kurumsal güvenlik duvarları arkasından bile çalışan uzak masaüstü monoreposu. |
+| **DoktorDesk** | Web • Mobil • Tanıtım Sitesi | `v1.9.0` | `PHP 8.2` `Flutter 3.44` `Riverpod` | Klinikler için online randevu widget'ı, yönetim paneli ve personel mobil uygulamasını tek monorepoda toplayan sağlık SaaS'ı. |
+
+---
+
+## 🏥 4. Sağlık, Dernek & STK Çözümleri
+
+| Proje | Platform | Sürüm | Teknoloji | Açıklama |
+| :--- | :--- | :--- | :--- | :--- |
+| **BAL-GÖÇ Dijital Yönetim** | Web (SaaS) | `v9.27.0` | `PHP 8.x` `MySQL` `3D Secure POS` | STK'lar için üye, aidat, tahsilat, demografik yaş piramidi, SMS bildirimleri ve Sanal POS yönetim platformu. |
+| **BAL-GÖÇ Mobil** | Android • iOS | `v1.1.0` | `Flutter` `Dart` `REST API` | Dernek üyeleri için dijital üye kimlik kartı, etkinlik yoklama, haber akışı ve kredi kartıyla anlık aidat ödeme. |
+| **TMRT-Der Üye & Evrak** | Web (SaaS) | `v1.4.0` | `PHP 8.0+` `MySQL` `Vanilla CSS` | Türk Medikal Radyoteknoloji Derneği için üye sicili, aidat takibi ve barkodlu/doğrulamalı resmi belge üretim altyapısı. |
+| **TMRT-Der Mobil** | Android • iOS | `v1.0.6` | `Flutter` `Dart` `REST API` | Radyoloji teknikerleri için bilimsel rehberler, güncel mevzuat, kongre kayıt takvimi ve duyuru platformu. |
+| **WP-tmrtder-sertifika** | WordPress Plugin | `v1.2.1` | `PHP 7.4+` `WordPress` `PDF Engine` | TMRT-Der eğitim katılımcılarının T.C. Kimlik / Kod ile sertifika doğrulamasını ve dinamik PDF olarak indirmesini sağlayan eklenti. |
+
+---
+
+## 🛠️ Teknik Yetkinlikler Özeti
+
+- **Mobil:** `Flutter` `Dart` `Kotlin (Native Audio & Channels)` `Swift` `Android Auto` `Android TV` `Riverpod` `Hive`
+- **Backend & Web:** `PHP 8.x (Vanilla & OOP)` `MySQL / MariaDB` `REST API` `JWT / RSA Şifreleme` `WebRTC` `.NET 8`
+- **Frontend & UI/UX:** `Tailwind CSS` `Vanilla CSS Tokens` `Glassmorphism UI` `Chart.js` `Responsive Web`
+- **Araçlar & DevOps:** `Git` `GitHub Actions (CI/CD)` `Playwright` `Docker` `Self-Hosted TURN`
+
+---
+
+© 2026 **Selim YILMAZ**. Tüm hakları saklıdır.
