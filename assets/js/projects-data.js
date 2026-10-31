@@ -5,25 +5,25 @@
 
 const PROJECTS_DATA = [
   {
-    id: 'seedio-prime',
-    title: 'SeeDIO PRIME',
-    category: 'mobile',
-    categoryLabel: 'Mobil & Streaming',
-    platforms: ['Android', 'Android TV', 'Android Auto'],
-    version: 'v1.42.2',
-    status: 'Canlı Yayında',
-    tagline: 'Native Kotlin Ses Görselleştiricili Radyo Streaming Platformu',
-    description: 'SeeDIO PRIME, dijital radyo ve ses yayıncılığında sıfır kesinti ve donanım ivmelendirmesi sunan yeni nesil bir streaming ekosistemidir. Kotlin platform kanalıyla Flutter arayüzüne bağlanan gerçek zamanlı ses spektrum analizörüne sahiptir.',
-    stack: ['Flutter', 'Dart', 'Kotlin Native', 'just_audio', 'audio_service'],
-    accent: '#8B5CF6',
-    iconType: 'image',
-    iconSrc: 'assets/img/projects/seedio-A-çubuk-play-ikon-dark-1024.png',
-    iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(99, 102, 241, 0.1))',
+    id: 'doktordesk',
+    title: 'DoktorDesk (Monorepo)',
+    category: 'system',
+    categoryLabel: 'Klinik & Sağlık SaaS',
+    platforms: ['Web Panel', 'Android', 'iOS'],
+    version: 'App v1.9.0 / Mobil v0.1.6',
+    status: 'Canlı Monorepo',
+    tagline: 'Klinikler İçin Online Randevu, Hasta Onayı ve İletişim Platformu',
+    description: 'Klinikler ve muayenehaneler için randevu widget’ı, klinik yönetim paneli ve personel mobil uygulamasını tek bir monorepoda birleştiren sağlık SaaS ekosistemidir.',
+    stack: ['PHP 8.2', 'MySQL', 'Bootstrap 5.3', 'Flutter 3.44', 'Riverpod', 'Playwright'],
+    accent: '#6366F1',
+    iconType: 'svg',
+    iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>',
+    iconBg: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(79, 70, 229, 0.1))',
     highlights: [
-      'Donanım seviyesinde çalışan gerçek zamanlı Kotlin ses spektrum görselleştiricisi',
-      'Android Auto için sürüş güvenliğine uygun sade arayüz kontrolleri',
-      'Android TV için uzaktan kumanda D-Pad navigasyon optimizasyonu',
-      '18 dilde tam yerelleştirme (i18n) ve 35+ sürümlük kesintisiz geliştirme'
+      'Klinik yönetim paneli, süper yönetici ve web sitesi randevu widget entegrasyonu',
+      'Flutter ve Riverpod mimarisiyle klinikler için tam özellikli mobil uygulama',
+      'Playwright ile otomatik uçtan uca testler ve ekran görüntüsü altyapısı',
+      'GitHub Actions ile bağımsız modül sürümleme ve dağıtım CI/CD'
     ]
   },
   {
@@ -46,6 +46,72 @@ const PROJECTS_DATA = [
       'Windows (.NET 8 tek dosya binary), macOS (Native Swift) ve mobil istemciler',
       'Gecikmesiz WebRTC video akışı ve TLS üzerinden güvenli kontrol kanalı',
       'Tüm platformların tek sunucu ve protokolle haberleştiği monorepo yapısı'
+    ]
+  },
+  {
+    id: 'seeiban',
+    title: 'SeeIBAN',
+    category: 'mobile',
+    categoryLabel: 'Fintech & OCR',
+    platforms: ['Android'],
+    version: 'v1.1.8',
+    status: 'Üretimde',
+    tagline: 'Kamera OCR Okumalı, MOD-97 Doğrulamalı Akıllı IBAN Cüzdanı',
+    description: 'SeeIBAN, IBAN kopyalama ve aktarım hatalarını sıfırlamak için geliştirilmiş offline-first bir cüzdandır. Kamerayı dekonta veya ekrana doğrultmanızla birlikte OCR metni okur, MOD-97 sağlama algoritmasıyla kontrol eder ve banka logosunu otomatik eşler.',
+    stack: ['Flutter', 'Google ML Kit', 'SQLite', 'MOD-97 Algorithm'],
+    accent: '#F97316',
+    iconType: 'image',
+    iconSrc: 'assets/img/projects/seeiban-logo.png',
+    iconBg: 'linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(234, 88, 12, 0.1))',
+    highlights: [
+      'Google ML Kit metin tanıma motoruyla kamera ve galeriden anında IBAN yakalama',
+      'MOD-97 algoritması ile yanlış numara girişlerini anında tespit etme',
+      'Türkiye’deki 25+ bankanın IBAN şablonu ve logolarını otomatik tanıma',
+      'Biyometrik kilit korumalı şifreli yerel SQLite veritabanı ve QR cüzdan'
+    ]
+  },
+  {
+    id: 'seemap',
+    title: 'SeeMAP',
+    category: 'mobile',
+    categoryLabel: 'Navigasyon & Araç Ekranı',
+    platforms: ['Android', 'Android Auto'],
+    version: 'v3.1.5',
+    status: 'Üretimde',
+    tagline: 'Android Auto Entegrasyonlu, Offline-First Akıllı Konum Defteri',
+    description: 'Müşteri adresleri, tarla sınırları ve özel koordinatları kategorize ederek saklayan akıllı harita ekosistemidir. Verileri cihazda Hive veritabanında tutarak internetsiz çalışır, Firebase ile yedekler ve Android Auto ile doğrudan araç ekranında navigasyon başlatır.',
+    stack: ['Flutter', 'Hive Database', 'Firebase', 'Android Auto Car App Library'],
+    accent: '#10B981',
+    iconType: 'image',
+    iconSrc: 'assets/img/projects/seemap-logo.png',
+    iconBg: 'linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.1))',
+    highlights: [
+      'Android Auto konsolu üzerinden kayıtlı konumlara tek tıkla rota başlatma',
+      'Offline-First mimari: Hive veritabanı sayesinde internetsiz tam erişim',
+      'Firebase Firestore bulut eşitlemesi ile çoklu cihaz desteği',
+      'Gelişmiş POI gruplama, özel notlar ve koordinat dışa aktarma'
+    ]
+  },
+  {
+    id: 'seedio-prime',
+    title: 'SeeDIO PRIME',
+    category: 'mobile',
+    categoryLabel: 'Mobil & Streaming',
+    platforms: ['Android', 'Android TV', 'Android Auto'],
+    version: 'v1.42.2',
+    status: 'Canlı Yayında',
+    tagline: 'Native Kotlin Ses Görselleştiricili Radyo Streaming Platformu',
+    description: 'SeeDIO PRIME, dijital radyo ve ses yayıncılığında sıfır kesinti ve donanım ivmelendirmesi sunan yeni nesil bir streaming ekosistemidir. Kotlin platform kanalıyla Flutter arayüzüne bağlanan gerçek zamanlı ses spektrum analizörüne sahiptir.',
+    stack: ['Flutter', 'Dart', 'Kotlin Native', 'just_audio', 'audio_service'],
+    accent: '#8B5CF6',
+    iconType: 'image',
+    iconSrc: 'assets/img/projects/seedio-A-çubuk-play-ikon-dark-1024.png',
+    iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(99, 102, 241, 0.1))',
+    highlights: [
+      'Donanım seviyesinde çalışan gerçek zamanlı Kotlin ses spektrum görselleştiricisi',
+      'Android Auto için sürüş güvenliğine uygun sade arayüz kontrolleri',
+      'Android TV için uzaktan kumanda D-Pad navigasyon optimizasyonu',
+      '18 dilde tam yerelleştirme (i18n) ve 35+ sürümlük kesintisiz geliştirme'
     ]
   },
   {
@@ -135,50 +201,6 @@ const PROJECTS_DATA = [
     ]
   },
   {
-    id: 'seeiban',
-    title: 'SeeIBAN',
-    category: 'mobile',
-    categoryLabel: 'Fintech & OCR',
-    platforms: ['Android'],
-    version: 'v1.1.8',
-    status: 'Üretimde',
-    tagline: 'Kamera OCR Okumalı, MOD-97 Doğrulamalı Akıllı IBAN Cüzdanı',
-    description: 'SeeIBAN, IBAN kopyalama ve aktarım hatalarını sıfırlamak için geliştirilmiş offline-first bir cüzdandır. Kamerayı dekonta veya ekrana doğrultmanızla birlikte OCR metni okur, MOD-97 sağlama algoritmasıyla kontrol eder ve banka logosunu otomatik eşler.',
-    stack: ['Flutter', 'Google ML Kit', 'SQLite', 'MOD-97 Algorithm'],
-    accent: '#F97316',
-    iconType: 'image',
-    iconSrc: 'assets/img/projects/seeiban-logo.png',
-    iconBg: 'linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(234, 88, 12, 0.1))',
-    highlights: [
-      'Google ML Kit metin tanıma motoruyla kamera ve galeriden anında IBAN yakalama',
-      'MOD-97 algoritması ile yanlış numara girişlerini anında tespit etme',
-      'Türkiye’deki 25+ bankanın IBAN şablonu ve logolarını otomatik tanıma',
-      'Biyometrik kilit korumalı şifreli yerel SQLite veritabanı ve QR cüzdan'
-    ]
-  },
-  {
-    id: 'seemap',
-    title: 'SeeMAP',
-    category: 'mobile',
-    categoryLabel: 'Navigasyon & Araç Ekranı',
-    platforms: ['Android', 'Android Auto'],
-    version: 'v3.1.5',
-    status: 'Üretimde',
-    tagline: 'Android Auto Entegrasyonlu, Offline-First Akıllı Konum Defteri',
-    description: 'Müşteri adresleri, tarla sınırları ve özel koordinatları kategorize ederek saklayan akıllı harita ekosistemidir. Verileri cihazda Hive veritabanında tutarak internetsiz çalışır, Firebase ile yedekler ve Android Auto ile doğrudan araç ekranında navigasyon başlatır.',
-    stack: ['Flutter', 'Hive Database', 'Firebase', 'Android Auto Car App Library'],
-    accent: '#10B981',
-    iconType: 'image',
-    iconSrc: 'assets/img/projects/seemap-logo.png',
-    iconBg: 'linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.1))',
-    highlights: [
-      'Android Auto konsolu üzerinden kayıtlı konumlara tek tıkla rota başlatma',
-      'Offline-First mimari: Hive veritabanı sayesinde internetsiz tam erişim',
-      'Firebase Firestore bulut eşitlemesi ile çoklu cihaz desteği',
-      'Gelişmiş POI gruplama, özel notlar ve koordinat dışa aktarma'
-    ]
-  },
-  {
     id: 'seesky',
     title: 'SeeSKY',
     category: 'mobile',
@@ -198,28 +220,6 @@ const PROJECTS_DATA = [
       'Güneş, yağmur, kar, fırtına ve gece durumuna göre canlı akan prosedürel animasyonlar',
       '<50ms yanıt süreli hiper yerel hava sensör verisi',
       '10 farklı dilde dinamik arayüz ve yerelleştirme'
-    ]
-  },
-  {
-    id: 'doktordesk',
-    title: 'DoktorDesk (Monorepo)',
-    category: 'system',
-    categoryLabel: 'Klinik & Sağlık SaaS',
-    platforms: ['Web Panel', 'Tanıtım Sitesi', 'Mobil (Android/iOS)'],
-    version: 'App v1.9.0 / Mobil v0.1.6',
-    status: 'Canlı Monorepo',
-    tagline: 'Klinikler İçin Online Randevu, Hasta Onayı ve İletişim Platformu',
-    description: 'Klinikler ve muayenehaneler için randevu widget’ı, klinik yönetim paneli ve personel mobil uygulamasını tek bir monorepoda birleştiren sağlık SaaS ekosistemidir.',
-    stack: ['PHP 8.2', 'MySQL', 'Bootstrap 5.3', 'Flutter 3.44', 'Riverpod', 'Playwright'],
-    accent: '#6366F1',
-    iconType: 'svg',
-    iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>',
-    iconBg: 'linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(79, 70, 229, 0.1))',
-    highlights: [
-      'Klinik yönetim paneli, süper yönetici ve web sitesi randevu widget entegrasyonu',
-      'Flutter ve Riverpod mimarisiyle klinikler için tam özellikli mobil uygulama',
-      'Playwright ile otomatik uçtan uca testler ve ekran görüntüsü altyapısı',
-      'GitHub Actions ile bağımsız modül sürümleme ve dağıtım CI/CD'
     ]
   },
   {

@@ -41,8 +41,8 @@ Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal 
 
 | Proje | Platform | Sürüm | Teknoloji | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
-| **SeeCORE** | Windows • macOS • Android • iOS | `v1.0.34` | `C# .NET 8` `Swift` `Flutter` `WebRTC` | Açık onaylı, kendi kendine barındırılan sinyal/TURN sunuculu, kurumsal güvenlik duvarları arkasından bile çalışan uzak masaüstü monoreposu. |
 | **DoktorDesk** | Web • Mobil • Tanıtım Sitesi | `v1.9.0` | `PHP 8.2` `Flutter 3.44` `Riverpod` | Klinikler için online randevu widget'ı, yönetim paneli ve personel mobil uygulamasını tek monorepoda toplayan sağlık SaaS'ı. |
+| **SeeCORE** | Windows • macOS • Android • iOS | `v1.0.34` | `C# .NET 8` `Swift` `Flutter` `WebRTC` | Açık onaylı, kendi kendine barındırılan sinyal/TURN sunuculu, kurumsal güvenlik duvarları arkasından bile çalışan uzak masaüstü monoreposu. |
 
 ---
 

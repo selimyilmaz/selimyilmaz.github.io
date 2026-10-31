@@ -591,6 +591,65 @@ body {
   margin-bottom: 0.35rem;
 }
 
+/* Platform Badges with Brand SVG Icons */
+.card-platform-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.platform-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-pill);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-full);
+  line-height: 1.2;
+  transition: all 0.2s var(--ease-smooth);
+}
+
+.card-project:hover .platform-chip {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--text-primary);
+}
+
+.platform-chip svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.platform-chip[data-platform="android"] svg { color: #22c55e; }
+.platform-chip[data-platform="tv"] svg { color: #38bdf8; }
+.platform-chip[data-platform="auto"] svg { color: #f59e0b; }
+.platform-chip[data-platform="ios"] svg { color: #94a3b8; }
+.platform-chip[data-platform="mac"] svg { color: #a78bfa; }
+.platform-chip[data-platform="windows"] svg { color: #0284c7; }
+.platform-chip[data-platform="web"] svg { color: #3b82f6; }
+.platform-chip[data-platform="wordpress"] svg { color: #21759b; }
+
+.modal-platform-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+}
+
+.modal-platform-strip .platform-chip {
+  font-size: 0.775rem;
+  padding: 0.3rem 0.7rem;
+}
+
 .card-h3 {
   font-size: 1.25rem;
   font-weight: 700;
