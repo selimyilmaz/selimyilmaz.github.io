@@ -48,13 +48,15 @@ Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal 
 
 ## 🏥 4. Sağlık, Dernek & STK Çözümleri
 
+Sağlık kuruluşları, mesleki birlikler ve sivil toplum dernekleri için geliştirilen bu ekosistem; üye sicil yönetimi, Sanal POS ile aidat ve bağış tahsilatı, dijital üye kimlik kartları, mevzuat/kılavuz kütüphaneleri ve kriptografik doğrulamalı resmi evrak/sertifika üretim motorlarını bir araya getirir.
+
 | Proje | Platform | Sürüm | Teknoloji | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
-| **BAL-GÖÇ Dijital Yönetim** | Web (SaaS) | `v9.27.0` | `PHP 8.x` `MySQL` `3D Secure POS` | STK'lar için üye, aidat, tahsilat, demografik yaş piramidi, SMS bildirimleri ve Sanal POS yönetim platformu. |
-| **BAL-GÖÇ Mobil** | Android • iOS | `v1.1.0` | `Flutter` `Dart` `REST API` | Dernek üyeleri için dijital üye kimlik kartı, etkinlik yoklama, haber akışı ve kredi kartıyla anlık aidat ödeme. |
-| **TMRT-Der Üye & Evrak** | Web (SaaS) | `v1.4.0` | `PHP 8.0+` `MySQL` `Vanilla CSS` | Türk Medikal Radyoteknoloji Derneği için üye sicili, aidat takibi ve barkodlu/doğrulamalı resmi belge üretim altyapısı. |
-| **TMRT-Der Mobil** | Android • iOS | `v1.0.6` | `Flutter` `Dart` `REST API` | Radyoloji teknikerleri için bilimsel rehberler, güncel mevzuat, kongre kayıt takvimi ve duyuru platformu. |
-| **WP-tmrtder-sertifika** | WordPress Plugin | `v1.2.1` | `PHP 7.4+` `WordPress` `PDF Engine` | TMRT-Der eğitim katılımcılarının T.C. Kimlik / Kod ile sertifika doğrulamasını ve dinamik PDF olarak indirmesini sağlayan eklenti. |
+| **STK & Dernek Dijital Yönetim** | Web (SaaS) | `v9.27.0` | `PHP 8.x` `MySQL` `3D Secure POS` | Sivil toplum kuruluşları ve dernekler için üye, aidat, tahsilat, demografik yaş piramidi, SMS bildirimleri ve Sanal POS yönetim platformu. |
+| **STK & Dernek Üye Mobil** | Android • iOS | `v1.1.0` | `Flutter` `Dart` `REST API` | Dernek ve vakıf üyeleri için dijital üye kimlik kartı, etkinlik yoklama, kurumsal haber akışı ve kredi kartıyla anlık aidat ödeme. |
+| **Medikal STK Üye & Evrak** | Web (SaaS) | `v1.4.0` | `PHP 8.0+` `MySQL` `Vanilla CSS` | Sağlık meslek dernekleri için üye sicili, hastane çalışma yeri takibi, aidat ve barkodlu/doğrulamalı resmi belge üretim altyapısı. |
+| **Medikal STK Mobil Portal** | Android • iOS | `v1.0.6` | `Flutter` `Dart` `REST API` | Sağlık profesyonelleri için bilimsel rehberler, güncel mevzuat, kongre kayıt takvimi ve anlık duyuru platformu. |
+| **Sertifika Doğrulama & PDF** | WordPress Plugin | `v1.2.1` | `PHP 7.4+` `WordPress` `PDF Engine` | Sempozyum, kongre ve eğitim katılımcılarının T.C. Kimlik / Kod ile sertifika doğrulamasını ve dinamik PDF olarak indirmesini sağlayan eklenti. |
 
 ---
 
