@@ -116,45 +116,24 @@ const PROJECTS_DATA = [
   },
   {
     id: 'ek-odeme-analiz',
-    title: 'Ek Ödeme Analiz Sistemi',
+    title: 'Ek Ödeme Analiz Sistemi (Web & Mobil)',
     category: 'web',
     categoryLabel: 'Sağlık Bilişimi & Finans',
-    platforms: ['Web Platformu'],
-    version: 'v18.7.0',
+    platforms: ['Web Platformu', 'Android', 'iOS'],
+    version: 'Web v18.7.0 / Mobil v1.6.0',
     status: 'Üretimde Aktif',
-    tagline: 'Sağlık Kurumları İçin Hassas Teşvik ve Ek Ödeme Karar Destek Motoru',
-    description: 'Üniversite hastaneleri ve sağlık kurumları için geliştirilmiş, 2547 sayılı kanun ve sağlık mevzuatına %100 uyumlu ek ödeme hesaplama platformudur. Personel bazında puan, ACGK ve birim katsayılarını işleyerek şeffaf bordro ve vergi dilimi simülasyonları üretir.',
-    stack: ['PHP 8.2+', 'MySQL / MariaDB', 'Tailwind CSS', 'Chart.js', 'RBAC Auth'],
+    tagline: 'Sağlık Kurumları İçin Teşvik, Ek Ödeme Karar Destek ve Hekim Mobil Portalı',
+    description: 'Üniversite hastaneleri ve sağlık kurumları için geliştirilmiş mevzuata tam uyumlu ek ödeme hesaplama platformu ve hekimler için mobil bordro/teşvik simülasyon arayüzüdür. Personel bazında puan, ACGK ve katsayıları işleyerek şeffaf bordrolama ve anlık mobil karar desteği sunar.',
+    stack: ['PHP 8.2+', 'MySQL / MariaDB', 'Flutter', 'Dart', 'Tailwind CSS', 'REST API', 'Chart.js'],
     accent: '#EC4899',
     iconType: 'image',
     iconSrc: 'assets/img/projects/ek-odeme-logo.png',
     iconBg: 'linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(244, 63, 94, 0.1))',
     highlights: [
-      'Aktif Çalışma Gün Katsayısı (ACGK) ve birim kurallarına göre otomatik fark motoru',
-      'round - half up matematiksel yuvarlama ile milimetrik finansal tutarlılık',
-      'Granüler Rol Tabanlı Yetkilendirme (RBAC) ve sağlık/araştırma veri grupları',
-      'Son 12 ayın teşvik, taban ve brüt trendlerini karşılaştıran grafik paneli'
-    ]
-  },
-  {
-    id: 'ek-odeme-mobil',
-    title: 'Ek Ödeme Analiz Mobil',
-    category: 'mobile',
-    categoryLabel: 'Mobil Karar Destek',
-    platforms: ['Android', 'iOS'],
-    version: 'v1.6.0',
-    status: 'Kurumsal Mobil',
-    tagline: 'Hekimler ve Komisyon Yöneticileri İçin Teşvik Karar Destek Arayüzü',
-    description: 'Ek Ödeme Analiz Sistemi’nin sahadaki hekimler ve hastane yönetim komisyonu için geliştirilmiş mobil arayüzüdür. Aylık puan dökümleri, vergi kesintileri ve birim katsayıları anlık olarak mobil ekrana yansıtılır.',
-    stack: ['Flutter', 'Dart', 'REST API', 'Secure Storage'],
-    accent: '#F43F5E',
-    iconType: 'svg',
-    iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v4m0 0l-2-2m2 2l2-2"></path></svg>',
-    iconBg: 'linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(225, 29, 72, 0.1))',
-    highlights: [
-      'Hekim ve klinik personeli için kişiselleştirilmiş net ek ödeme simülatörü',
-      'Birim yöneticileri için dönem bazlı onay ve hiyerarşik kontrol',
-      'Güvenli JWT tabanlı kurumsal API entegrasyonu'
+      'ACGK ve kurum kurallarına göre kuruşu kuruşuna otomatik ek ödeme ve teşvik fark motoru',
+      'Hekimler ve klinik personeli için kişiselleştirilmiş anlık mobil teşvik simülatörü',
+      'Granüler Rol Tabanlı Yetkilendirme (RBAC) ve son 12 ayın brüt/taban analitik paneli',
+      'Güvenli JWT tabanlı kurumsal REST API ve şifrelenmiş veri depolama'
     ]
   },
   {
@@ -162,42 +141,21 @@ const PROJECTS_DATA = [
     title: 'FinSee (Akıllı Bütçe & Portföy)',
     category: 'web',
     categoryLabel: 'Fintech & Varlık Yönetimi',
-    platforms: ['Web Platformu'],
-    version: 'v4.5.0',
+    platforms: ['Web Platformu', 'Android'],
+    version: 'Web v4.5.0 / Mobil v1.8.0',
     status: 'Canlıda Kullanılıyor',
-    tagline: 'Canlı Piyasa Akışlı, Varlık ve Yatırım Portföyü Yönetim Platformu',
-    description: 'FinSee, "param nerede ve ne kadar oldu?" sorusunu tek ekranda yanıtlayan kapsamlı bir kişisel finans platformudur. Banka hesapları, hisse senetleri (BIST), TEFAS fonları, kripto paralar ve düzenli faturaları tek kokpitte toplar.',
-    stack: ['PHP 8.1+', 'MySQL', 'Tailwind CSS', 'Chart.js', 'Yahoo Finance API', 'TEFAS API'],
+    tagline: 'Canlı Piyasa Akışlı, HUD Estetiğinde Biyometrik Varlık ve Portföy Ekosistemi',
+    description: 'BIST hisse senetleri, TEFAS yatırım fonları, kripto varlıklar, banka hesapları ve düzenli faturaları tek kokpitte toplayan finans platformudur. Web yönetim paneli ile uçak kokpitinden ilham alan HUD estetiğine ve biyometrik güvenliğe sahip mobil uygulamayı birleştirir.',
+    stack: ['PHP 8.1+', 'MySQL', 'Flutter', 'Dart', 'Tailwind CSS', 'Biometrics', 'Chart.js', 'Yahoo Finance API', 'TEFAS API'],
     accent: '#F59E0B',
     iconType: 'svg',
     iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>',
     iconBg: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.1))',
     highlights: [
       'BIST hisse fiyatları, TEFAS fonları ve kripto varlıklar için canlı veri akışı',
-      'Yatırım portföy dağılımı, net değer analizi ve nakit akış tahminleme',
-      'Tekrarlayan fatura ve abonelik takibi, yaklaşan ödeme uyarıları',
-      'Hafif PHP + Tailwind mimarisiyle sıfır harici sunucu bağımlılığı'
-    ]
-  },
-  {
-    id: 'butce-mobil-finsee',
-    title: 'FinSee Mobile',
-    category: 'mobile',
-    categoryLabel: 'Fintech & Mobil',
-    platforms: ['Android'],
-    version: 'v1.8.0',
-    status: 'Mobil Üretim',
-    tagline: 'Stratejik Komutan: HUD Estetiğinde Biyometrik Finans Kokpiti',
-    description: 'FinSee platformunun mobil eşlikçisi; uçak kokpitlerinden ilham alan HUD arayüzü, cam efektli kartlar ve biyometrik güvenlik ile servet yönetimini cebinize taşır.',
-    stack: ['Flutter', 'Dart', 'Biometrics', 'Glassmorphism UI'],
-    accent: '#A855F7',
-    iconType: 'svg',
-    iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>',
-    iconBg: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(126, 34, 206, 0.1))',
-    highlights: [
-      'Biyometrik parmak izi / yüz tanıma ile üst düzey finansal gizlilik',
-      'Yüksek yoğunluklu HUD / Glassmorphism arayüz dili',
-      'Portföy ve fatura verileriyle çift yönlü gerçek zamanlı senkronizasyon'
+      'Biyometrik parmak izi/yüz tanıma korumalı ve HUD / Glassmorphism mobil arayüz',
+      'Yatırım portföy dağılımı, net değer analizi, nakit akış tahminleme ve fatura takibi',
+      'Web ve mobil arasında çift yönlü, güvenli ve anlık veri senkronizasyonu'
     ]
   },
   {
@@ -224,44 +182,24 @@ const PROJECTS_DATA = [
   },
   {
     id: 'stk-web',
-    title: 'STK & Dernek Dijital Yönetim',
+    title: 'STK & Dernek Dijital Yönetim (Web & Mobil)',
     category: 'web',
     categoryLabel: 'STK & Kurumsal SaaS',
-    platforms: ['Web Platformu'],
-    version: 'v9.27.0',
+    platforms: ['Web Platformu', 'Android', 'iOS'],
+    version: 'Web v9.27.0 / Mobil v1.1.0',
     status: 'Kurumsal Üretim',
-    tagline: 'STK ve Dernekler İçin Üye, Aidat, Sanal POS ve Analitik Platformu',
-    description: 'Sivil toplum kuruluşları, vakıflar ve dernekler için geliştirilmiş; binlerce üyenin aidat, online tahsilat, demografik analiz ve bağış süreçlerini merkezileştiren kurumsal SaaS platformudur.',
-    stack: ['PHP 8.x', 'MySQL', 'Chart.js', 'Sanal POS (3D Secure)', 'SMS Gateway', 'Excel Engine'],
+    tagline: 'Sivil Toplum Kuruluşları İçin Üye, Aidat, Online Tahsilat ve Mobil Kimlik Portalı',
+    description: 'Sivil toplum kuruluşları, vakıflar ve dernekler için geliştirilmiş uçtan uca kurumsal yönetim ekosistemidir. Web yönetim paneli ile üye sicil, online aidat tahsilatı, demografik analiz ve SMS süreçlerini merkezileştirirken; mobil uygulaması ile üyelerin haber takibi, etkinlik yoklaması, aidat ödemesi ve dijital üye kartı taşımasını sağlar.',
+    stack: ['PHP 8.x', 'MySQL', 'Flutter 3.44+', 'Dart', 'REST API', 'Chart.js', 'SMS Gateway', 'Excel Engine'],
     accent: '#2563EB',
     iconType: 'svg',
     iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>',
     iconBg: 'linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(29, 78, 216, 0.1))',
     highlights: [
-      'Demografi, yaş piramidi, eğitim düzeyi ve 5 yıllık aidat trend grafikleri',
-      '3D Secure Sanal POS ile kredi kartıyla online aidat ve bağış tahsilatı',
-      'Otomatik SMS bildirimleri ve toplu Excel veri aktarım motoru'
-    ]
-  },
-  {
-    id: 'stk-mobil',
-    title: 'STK & Dernek Üye Mobil',
-    category: 'mobile',
-    categoryLabel: 'STK & Mobil',
-    platforms: ['Android', 'iOS'],
-    version: 'v1.1.0',
-    status: 'Mobil Üretim',
-    tagline: 'Dernek ve Vakıf Üyeleri İçin Dijital Kart, Haberler ve Aidat Portalı',
-    description: 'Dernek ve vakıf üyelerinin kurumsal haberleri okuyabildiği, etkinlikleri takip ettiği, aidat borçlarını kredi kartıyla ödeyebildiği ve dijital üye kartını taşıdığı resmi mobil uygulamadır.',
-    stack: ['Flutter 3.44+', 'Dart', 'REST API', 'Secure Storage'],
-    accent: '#7C3AED',
-    iconType: 'svg',
-    iconSvg: '<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path></svg>',
-    iconBg: 'linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(109, 40, 217, 0.1))',
-    highlights: [
-      'Kurumsal haberler ile üye yönetim panelini tek çatı altında birleştirme',
-      'Dijital üye kartı ve QR kodlu etkinlik giriş kontrolü',
-      'Anlık push bildirimleri ve online aidat ödeme akışı'
+      'Demografi, yaş piramidi, eğitim düzeyi ve çok yıllık aidat trend analizleri',
+      'Güvenli online ödeme altyapısıyla kredi kartıyla aidat ve bağış tahsilatı',
+      'Üyeler için QR kodlu dijital kimlik kartı ve etkinlik giriş/yoklama kontrolü',
+      'Otomatik SMS bildirimleri, kurumsal haber akışı ve toplu Excel veri aktarımı'
     ]
   },
   {

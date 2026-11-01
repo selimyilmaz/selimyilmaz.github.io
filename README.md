@@ -4,7 +4,7 @@
 [![GitHub Profile](https://img.shields.io/badge/GitHub-selimyilmaz-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/selimyilmaz)
 [![İletişim](https://img.shields.io/badge/E--Posta-iletisim%40selimyilmaz.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iletisim@selimyilmaz.com)
 
-Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal B2B finans/sağlık sistemleri, WebRTC tabanlı monorepo çözümleri ve WordPress eklentilerini içeren 20 temel projenin merkezi kataloğudur.
+Bu depo, **Selim YILMAZ** (Senior Web & Mobile Full-Stack Developer) tarafından geliştirilen mobil uygulamalar, kurumsal B2B finans/sağlık sistemleri, WebRTC tabanlı monorepo çözümleri, 100+ kurumsal web sitesi ve özel yazılım araçlarını içeren 17 temel mimarinin merkezi kataloğudur.
 
 > 🚀 **İnteraktif Canlı Vitrin:** Tüm projelerin ekran görüntüleri, canlı filtrelemeleri ve detaylı teknik dökümleri için **[selimyilmaz.github.io](https://selimyilmaz.github.io)** adresini ziyaret edebilirsiniz.
 
@@ -18,7 +18,6 @@ Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal 
 | **SeeIBAN** | Android | `v1.1.8` | `Flutter` `ML Kit OCR` `SQLite` | Kamera OCR ile anlık IBAN tarama, MOD-97 algoritmasıyla doğrulama, 25+ banka tespiti ve biyometrik kilitli cüzdan. |
 | **SeeMAP** | Android • Android Auto | `v3.1.5` | `Flutter` `Hive` `Firebase` | Android Auto entegrasyonlu, internetsiz çalışan (offline-first) akıllı konum, tarla sınırı ve rota yönetim defteri. |
 | **SeeSKY** | Android | `v1.23.3` | `Flutter` `Weather API` `Canvas` | Canlı akan gökyüzü animasyonları, <50ms anlık sensör verisi ve doğal dilde bağlamsal hava durumu özeti. |
-| **FinSee Mobile** | Android | `v1.8.0` | `Flutter` `Dart` `Biometrics` | Stratejik finansal komuta merkezi; uçuş göstergesi HUD arayüzü, cam efektli kartlar ve biyometrik giriş güvenliği. |
 | **SeeMusic (SeeBliss)** | Android • TV • Auto | `v1.1.1` | `Flutter` `audio_service` `LRCLIB` | Reklamsız, aboneliksiz, LRCLIB üzerinden senkronize akan şarkı sözü desteğine sahip açık kaynak medya çalar. |
 | **SeeEditor Pro** | Android | `v1.2.0` | `Flutter` `Dart` `Syntax Engine` | Mobilde kod yazmayı kolaylaştıran akıllı sözcük kaydırma (word wrap), auto-hide panel ve Landscape Pro Mode. |
 | **SeeDRIVE** | Android TV • Android | `v1.0.0` | `Flutter` `Google Drive API` | Google Drive bulut arşivindeki video ve müzikleri doğrudan TV ekranında oynatan uzaktan kumanda odaklı medya oynatıcı. |
@@ -30,9 +29,8 @@ Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal 
 
 | Proje | Platform | Sürüm | Teknoloji | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
-| **Ek Ödeme Analiz Sistemi** | Web (Kurumsal) | `v18.7.0` | `PHP 8.2+` `MySQL` `Chart.js` | Üniversite hastaneleri ve sağlık kurumları için teşvik, taban ve ACGK fark hesaplayan mevzuata %100 uyumlu karar destek platformu. |
-| **Ek Ödeme Analiz Mobil** | Android • iOS | `v1.6.0` | `Flutter` `Dart` `REST API` | Hekimler ve hastane komisyon yöneticileri için teşvik dökümlerini ve bordro simülasyonunu cebine taşıyan mobil arayüz. |
-| **FinSee (Bütçe & Portföy)** | Web (SaaS) | `v4.5.0` | `PHP 8.1+` `Tailwind` `BIST/TEFAS API` | BIST hisseleri, TEFAS fonları, kripto varlıklar ve düzenli faturaları tek panelde toplayan canlı piyasa akışlı finans platformu. |
+| **Ek Ödeme Analiz Sistemi** | Web • Android • iOS | `Web v18.7.0` / `Mobil v1.6.0` | `PHP 8.2+` `MySQL` `Flutter` `Tailwind` | Sağlık kurumları için teşvik, taban ve ACGK fark hesaplayan mevzuata tam uyumlu karar destek platformu ve hekimler için anlık mobil bordro simülatörü. |
+| **FinSee (Akıllı Bütçe & Portföy)** | Web • Android | `Web v4.5.0` / `Mobil v1.8.0` | `PHP 8.1+` `Flutter` `BIST/TEFAS API` | BIST hisseleri, TEFAS fonları, kripto varlıklar ve faturaları tek kokpitte toplayan canlı piyasa akışlı finans platformu ve HUD estetikli biyometrik mobil cüzdan. |
 | **Kira & Mülk Takip** | Web (B2B) | `v3.3.1` | `PHP Vanilla` `MySQL` `Tailwind` | Gayrimenkul yöneticileri için kiracı sözleşmeleri, süzme sayaç elektrik tüketim faturalandırması ve PDF tahsilat panosu. |
 
 ---
@@ -41,30 +39,41 @@ Bu depo, **Selim YILMAZ** tarafından geliştirilen mobil uygulamalar, kurumsal 
 
 | Proje | Platform | Sürüm | Teknoloji | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
-| **DoktorDesk** | Web • Mobil • Tanıtım Sitesi | `v1.9.0` | `PHP 8.2` `Flutter 3.44` `Riverpod` | Klinikler için online randevu widget'ı, yönetim paneli ve personel mobil uygulamasını tek monorepoda toplayan sağlık SaaS'ı. |
+| **DoktorDesk** | Web • Mobil (Android/iOS) • Tanıtım | `v1.9.0` | `PHP 8.2` `Flutter 3.44` `Riverpod` | Klinikler için online randevu widget'ı, yönetim paneli ve personel mobil uygulamasını tek monorepoda toplayan sağlık SaaS'ı. |
 | **SeeCORE** | Windows • macOS • Android • iOS | `v1.0.34` | `C# .NET 8` `Swift` `Flutter` `WebRTC` | Açık onaylı, kendi kendine barındırılan sinyal/TURN sunuculu, kurumsal güvenlik duvarları arkasından bile çalışan uzak masaüstü monoreposu. |
 
 ---
 
 ## 🏥 4. Sağlık, Dernek & STK Çözümleri
 
-Sağlık kuruluşları, mesleki birlikler ve sivil toplum dernekleri için geliştirilen bu ekosistem; üye sicil yönetimi, Sanal POS ile aidat ve bağış tahsilatı, dijital üye kimlik kartları, mevzuat/kılavuz kütüphaneleri ve kriptografik doğrulamalı resmi evrak/sertifika üretim motorlarını bir araya getirir.
+Sağlık kuruluşları, mesleki birlikler ve sivil toplum dernekleri için geliştirilen bu ekosistem; üye sicil yönetimi, güvenli online aidat ve bağış tahsilatı, dijital üye kimlik kartları, mevzuat/kılavuz kütüphaneleri ve kriptografik doğrulamalı resmi evrak/sertifika üretim motorlarını bir araya getirir.
 
 | Proje | Platform | Sürüm | Teknoloji | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
-| **STK & Dernek Dijital Yönetim** | Web (SaaS) | `v9.27.0` | `PHP 8.x` `MySQL` `3D Secure POS` | Sivil toplum kuruluşları ve dernekler için üye, aidat, tahsilat, demografik yaş piramidi, SMS bildirimleri ve Sanal POS yönetim platformu. |
-| **STK & Dernek Üye Mobil** | Android • iOS | `v1.1.0` | `Flutter` `Dart` `REST API` | Dernek ve vakıf üyeleri için dijital üye kimlik kartı, etkinlik yoklama, kurumsal haber akışı ve kredi kartıyla anlık aidat ödeme. |
+| **STK & Dernek Dijital Yönetim** | Web • Android • iOS | `Web v9.27.0` / `Mobil v1.1.0` | `PHP 8.x` `Flutter` `MySQL` `REST API` | Sivil toplum kuruluşları ve dernekler için üye sicili, aidat ve online tahsilat, demografi analitiği, SMS iletişimi ve QR dijital kimlik kartlı mobil üye portalı. |
 | **Medikal STK Üye & Evrak** | Web (SaaS) | `v1.4.0` | `PHP 8.0+` `MySQL` `Vanilla CSS` | Sağlık meslek dernekleri için üye sicili, hastane çalışma yeri takibi, aidat ve barkodlu/doğrulamalı resmi belge üretim altyapısı. |
 | **Medikal STK Mobil Portal** | Android • iOS | `v1.0.6` | `Flutter` `Dart` `REST API` | Sağlık profesyonelleri için bilimsel rehberler, güncel mevzuat, kongre kayıt takvimi ve anlık duyuru platformu. |
 | **Sertifika Doğrulama & PDF** | WordPress Plugin | `v1.2.1` | `PHP 7.4+` `WordPress` `PDF Engine` | Sempozyum, kongre ve eğitim katılımcılarının T.C. Kimlik / Kod ile sertifika doğrulamasını ve dinamik PDF olarak indirmesini sağlayan eklenti. |
 
 ---
 
+## 🌐 5. Vitrin Dışındaki 100+ Kurumsal Web Sitesi & Özel Çözümler
+
+Bu katalogda listelenen 17 çekirdek mimarinin yanı sıra; 15 yılı aşkın süredir kamu kurumları, üniversiteler, tıp kongreleri, sivil toplum kuruluşları ve özel sektör firmaları için geliştirilmiş geniş bir yazılım portföyü bulunmaktadır:
+
+- **100+ Kurumsal Web Sitesi & Portal:** Üniversite birimleri, ulusal kongreler, dernekler ve kurumsal firmalar için yüksek performanslı, SEO odaklı ve modern responsive web siteleri.
+- **Özel REST API & Mikro Servisler:** Çeşitli kurumsal platformlar arasında güvenli veri transferi ve eşitleme sağlayan arka plan servisleri.
+- **E-Ticaret & Dijital Tahsilat Modülleri:** Güvenli ödeme ağ geçitleri, faturalandırma ve abonelik yönetim sistemleri.
+- **Otomasyon & Veri Kazıma (Scraping) Botları:** Periyodik veri işleme, cron görevleri ve iş akışı otomasyon araçları.
+- **WordPress Çözümleri:** Özel tema mimarileri, PDF dinamik render eklentileri ve REST API köprüleri.
+
+---
+
 ## 🛠️ Teknik Yetkinlikler Özeti
 
-- **Mobil:** `Flutter` `Dart` `Kotlin (Native Audio & Channels)` `Swift` `Android Auto` `Android TV` `Riverpod` `Hive`
-- **Backend & Web:** `PHP 8.x (Vanilla & OOP)` `MySQL / MariaDB` `REST API` `JWT / RSA Şifreleme` `WebRTC` `.NET 8`
-- **Frontend & UI/UX:** `Tailwind CSS` `Vanilla CSS Tokens` `Glassmorphism UI` `Chart.js` `Responsive Web`
+- **Web Development & Backend:** `PHP 8.x (Vanilla & OOP)` `MySQL / MariaDB` `RESTful API` `JWT / RSA Şifreleme` `WebRTC` `.NET 8`
+- **Mobil Geliştirme:** `Flutter` `Dart` `Kotlin (Native Audio & Channels)` `Swift` `Android Auto` `Android TV` `Riverpod` `Hive`
+- **Frontend & UI/UX:** `Tailwind CSS` `Vanilla CSS Tokens` `Glassmorphism UI` `Chart.js` `Responsive Web` `Accessibility`
 - **Araçlar & DevOps:** `Git` `GitHub Actions (CI/CD)` `Playwright` `Docker` `Self-Hosted TURN`
 
 ---

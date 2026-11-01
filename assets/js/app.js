@@ -120,7 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!grid || typeof PROJECTS_DATA === 'undefined') return;
 
     const filtered = PROJECTS_DATA.filter(p => {
-      const matchCat = currentCategory === 'all' || p.category === currentCategory;
+      const matchCat = currentCategory === 'all' ||
+        p.category === currentCategory ||
+        (currentCategory === 'mobile' && p.platforms.some(pl => /android|ios|tv|auto/i.test(pl))) ||
+        (currentCategory === 'web' && p.platforms.some(pl => /web/i.test(pl)));
+
       const matchSearch = !currentSearch ||
         p.title.toLowerCase().includes(currentSearch) ||
         p.tagline.toLowerCase().includes(currentSearch) ||
