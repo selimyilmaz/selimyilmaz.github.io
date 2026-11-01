@@ -1,0 +1,18 @@
+{
+  "name": "selimyilmaz-portfolio",
+  "version": "2.5.0",
+  "private": true,
+  "description": "Selim YILMAZ Developer Portfolio & Project Ecosystem",
+  "scripts": {
+    "sync-versions": "node .github/scripts/sync-versions.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "flutter",
+    "php",
+    "fullstack"
+  ],
+  "author": "Selim YILMAZ",
+  "license": "MIT"
+}

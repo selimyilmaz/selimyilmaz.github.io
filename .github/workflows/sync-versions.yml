@@ -1,0 +1,46 @@
+name: Auto-Sync Project Versions
+
+on:
+  schedule:
+    # Run daily at 03:00 UTC (06:00 Istanbul time)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    # Allows manual trigger at any time from GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Sync Versions from Repositories
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SYNC_PAT || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run version synchronization script
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_PAT || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/sync-versions.js
+
+      - name: Commit and push changes if updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain assets/js/projects-data.js)" ]; then
+            echo "Changes detected in assets/js/projects-data.js. Committing..."
+            git add assets/js/projects-data.js
+            git commit -m "chore(sync): auto-update project versions from repositories"
+            git push
+            echo "Successfully committed and pushed updated versions."
+          else
+            echo "All project versions are already up-to-date."
+          fi
