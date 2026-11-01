@@ -48,6 +48,30 @@ const PROJECTS_DATA = [
       'Tüm platformların tek sunucu ve protokolle haberleştiği monorepo yapısı'
     ]
   },
+
+  {
+    id: 'seedio-prime',
+    title: 'SeeDIO PRIME',
+    category: 'mobile',
+    categoryLabel: 'Mobil & Streaming',
+    platforms: ['Android', 'Android TV', 'Android Auto'],
+    version: 'v1.42.2',
+    status: 'Canlı Yayında',
+    tagline: 'Native Kotlin Ses Görselleştiricili Radyo Streaming Platformu',
+    description: 'SeeDIO PRIME, dijital radyo ve ses yayıncılığında sıfır kesinti ve donanım ivmelendirmesi sunan yeni nesil bir streaming ekosistemidir. Kotlin platform kanalıyla Flutter arayüzüne bağlanan gerçek zamanlı ses spektrum analizörüne sahiptir.',
+    stack: ['Flutter', 'Dart', 'Kotlin Native', 'just_audio', 'audio_service'],
+    accent: '#8B5CF6',
+    iconType: 'image',
+    iconSrc: 'assets/img/projects/seedio-A-çubuk-play-ikon-dark-1024.png',
+    iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(99, 102, 241, 0.1))',
+    highlights: [
+      'Donanım seviyesinde çalışan gerçek zamanlı Kotlin ses spektrum görselleştiricisi',
+      'Android Auto için sürüş güvenliğine uygun sade arayüz kontrolleri',
+      'Android TV için uzaktan kumanda D-Pad navigasyon optimizasyonu',
+      '18 dilde tam yerelleştirme (i18n) ve 35+ sürümlük kesintisiz geliştirme'
+    ]
+  },
+
   {
     id: 'seeiban',
     title: 'SeeIBAN',
@@ -93,35 +117,13 @@ const PROJECTS_DATA = [
     ]
   },
   {
-    id: 'seedio-prime',
-    title: 'SeeDIO PRIME',
-    category: 'mobile',
-    categoryLabel: 'Mobil & Streaming',
-    platforms: ['Android', 'Android TV', 'Android Auto'],
-    version: 'v1.42.2',
-    status: 'Canlı Yayında',
-    tagline: 'Native Kotlin Ses Görselleştiricili Radyo Streaming Platformu',
-    description: 'SeeDIO PRIME, dijital radyo ve ses yayıncılığında sıfır kesinti ve donanım ivmelendirmesi sunan yeni nesil bir streaming ekosistemidir. Kotlin platform kanalıyla Flutter arayüzüne bağlanan gerçek zamanlı ses spektrum analizörüne sahiptir.',
-    stack: ['Flutter', 'Dart', 'Kotlin Native', 'just_audio', 'audio_service'],
-    accent: '#8B5CF6',
-    iconType: 'image',
-    iconSrc: 'assets/img/projects/seedio-A-çubuk-play-ikon-dark-1024.png',
-    iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(99, 102, 241, 0.1))',
-    highlights: [
-      'Donanım seviyesinde çalışan gerçek zamanlı Kotlin ses spektrum görselleştiricisi',
-      'Android Auto için sürüş güvenliğine uygun sade arayüz kontrolleri',
-      'Android TV için uzaktan kumanda D-Pad navigasyon optimizasyonu',
-      '18 dilde tam yerelleştirme (i18n) ve 35+ sürümlük kesintisiz geliştirme'
-    ]
-  },
-  {
     id: 'ek-odeme-analiz',
-    title: 'Ek Ödeme Analiz Sistemi (Web & Mobil)',
+    title: 'Ek Ödeme Analiz Sistemi',
     category: 'web',
     categoryLabel: 'Sağlık Bilişimi & Finans',
     platforms: ['Web Platformu', 'Android', 'iOS'],
     version: 'Web v18.7.0 / Mobil v1.6.0',
-    status: 'Üretimde Aktif',
+    status: 'Aktif Kullanımda',
     tagline: 'Sağlık Kurumları İçin Teşvik, Ek Ödeme Karar Destek ve Hekim Mobil Portalı',
     description: 'Üniversite hastaneleri ve sağlık kurumları için geliştirilmiş mevzuata tam uyumlu ek ödeme hesaplama platformu ve hekimler için mobil bordro/teşvik simülasyon arayüzüdür. Personel bazında puan, ACGK ve katsayıları işleyerek şeffaf bordrolama ve anlık mobil karar desteği sunar.',
     stack: ['PHP 8.2+', 'MySQL / MariaDB', 'Flutter', 'Dart', 'Tailwind CSS', 'REST API', 'Chart.js'],
@@ -182,7 +184,7 @@ const PROJECTS_DATA = [
   },
   {
     id: 'stk-web',
-    title: 'STK & Dernek Dijital Yönetim (Web & Mobil)',
+    title: 'STK & Dernek Dijital Yönetim',
     category: 'web',
     categoryLabel: 'STK & Kurumsal SaaS',
     platforms: ['Web Platformu', 'Android', 'iOS'],
